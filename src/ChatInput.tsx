@@ -1,7 +1,7 @@
-export const ChatInput = () => {
+export const ChatInput: React.FC = () => {
   return (
     <div className="fixed bottom-0 w-full mb-4 px-3 md:px-10">
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={(e: React.FormEvent) => e.preventDefault()}>
         <div className="flex justify-center items-center">
           <input
             type="text"
